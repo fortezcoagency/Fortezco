@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fortezco Website
 
 Enterprise-grade landing page for Fortezco - Elite Software Engineering
@@ -31,3 +32,7 @@ Then visit http://localhost:8000
 
 ## License
 © 2026 Fortezco. All rights reserved.
+=======
+# Fortezco
+Fortezco designs, builds, and operates custom automation and software systems for founders and businesses, using enterprise-grade engineering and AI-driven workflows
+>>>>>>> 72a46df7fc94554b7b00ad25c3686582a6e10af6
