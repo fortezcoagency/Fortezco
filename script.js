@@ -304,9 +304,22 @@ const observer = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
   const elements = document.querySelectorAll('.pillar-card, .service-card, .proof-card');
   elements.forEach(el => {
+    // Set initial state for animation
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    observer.observe(el);
+
+    // Immediately trigger fade-in for elements already in viewport
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      // Element is in viewport, show it immediately
+      setTimeout(() => {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, 100);
+    } else {
+      // Element is not in viewport, observe it
+      observer.observe(el);
+    }
   });
 });
