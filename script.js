@@ -348,11 +348,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// ===================================
-// Past Projects Slider
-// ===================================
-
-let currentSlide = 0;
 const slides = [];
 let sliderInitialized = false;
 
