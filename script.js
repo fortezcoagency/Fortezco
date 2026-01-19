@@ -21,7 +21,13 @@ function initializeSlider() {
   // Add slides
   projectCards.forEach((card, index) => {
     slides.push(card);
-    card.style.display = index === 0 ? 'flex' : 'none';
+    if (index === 0) {
+      card.style.display = 'flex';
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+    } else {
+      card.style.display = 'none';
+    }
   });
 
   // Create dots
@@ -49,6 +55,8 @@ function showSlide(index) {
 
   // Show current slide
   slides[index].style.display = 'flex';
+  slides[index].style.opacity = '1';
+  slides[index].style.transform = 'translateY(0)';
 
   // Update dots
   const dots = document.querySelectorAll('.dot');
@@ -292,9 +300,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observe all elements with fade-in-on-scroll class
+// Observe all elements with fade-in-on-scroll class (except project cards which are handled by slider)
 document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.pillar-card, .service-card, .proof-card, .project-card');
+  const elements = document.querySelectorAll('.pillar-card, .service-card, .proof-card');
   elements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';

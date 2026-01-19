@@ -21,6 +21,3 @@ Enterprise-grade landing page for Fortezco - Elite Software Engineering
 
 ## License
 © 2026 Fortezco. All rights reserved.
-=======
-# Fortezco
-Fortezco designs, builds, and operates custom automation and software systems for founders and businesses, using enterprise-grade engineering and AI-driven workflows
