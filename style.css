@@ -922,8 +922,8 @@ p {
 .proof-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-sm);
-  /* Reduced from lg to bring cards closer together */
+  gap: 0;
+  /* No gap - cards stick together */
 }
 
 .proof-card {
