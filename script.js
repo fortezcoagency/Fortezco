@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 });
-=======
+
 // ===================================
 // Past Projects Slider
 // ===================================
