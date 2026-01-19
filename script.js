@@ -697,4 +697,4 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 });
->>>>>>> 72a46df7fc94554b7b00ad25c3686582a6e10af6
+
