@@ -215,11 +215,7 @@ function submitForm() {
 
   // TODO: Replace this URL with your Google Apps Script Web App URL
   // See google-sheets-setup.md in the brain folder for setup instructions
-<<<<<<< HEAD
-  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyZZ5zGnVSaJYbcxNsKVK8mSuBHcoFbOUsdkJ5aDk2m/dev';
-=======
-  const GOOGLE_SCRIPT_URL = 'https://docs.google.com/spreadsheets/d/1lpuXV7FsrLYLaIp3f_k0wx60CK8hnTmNA2tduuO9mkQ/edit?usp=drivesdk';
->>>>>>> 3010b3172df57b316dc88d001c1bcd9126ffe808
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzcR8dEPn9Jc_OY0QR1weaLL18Jp82zlSyvbPNh1a_b27CuFUiROz7JWtJBa_DY13sT6A/exec';
 
   // Submit to Google Sheets
   fetch(GOOGLE_SCRIPT_URL, {
