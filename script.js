@@ -215,7 +215,7 @@ function submitForm() {
 
   // TODO: Replace this URL with your Google Apps Script Web App URL
   // See google-sheets-setup.md in the brain folder for setup instructions
-  const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+  const GOOGLE_SCRIPT_URL = 'https://docs.google.com/spreadsheets/d/1lpuXV7FsrLYLaIp3f_k0wx60CK8hnTmNA2tduuO9mkQ/edit?usp=drivesdk';
 
   // Submit to Google Sheets
   fetch(GOOGLE_SCRIPT_URL, {
